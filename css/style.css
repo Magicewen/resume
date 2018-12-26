@@ -124,8 +124,13 @@ a{
 /*userCard*/
 .userCard{
   max-width: 940px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   background: #fff;
+  margin-top: -396px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 .pictureAndText{
   padding: 50px;
@@ -207,4 +212,82 @@ a{
   height: 30px;
   fill: white;
   vertical-align: top;
+}
+.download{
+  text-align: center;
+  margin-top: 30px;
+}
+.btn-download{
+  padding: 21px 55px;
+  color: #3d4451 !important;
+  border: 1px solid #cbcdcf;
+  background: transparent;
+  box-shadow: none;
+  display: inline-block;
+  border-radius: 3px;
+  margin: 5px;
+}
+.btn-download:hover{
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.18), 0px 3px 10px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s;
+}
+.brief{
+  margin-top: 25px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.8;
+  font-family: 'Open Sans';
+}
+section{
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
+}
+section h2{
+  color: #3d4451;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.skillList{
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  background: #fff;
+  padding: 40px 50px 0;
+}
+.skillList li{
+  width: 50%;
+  float: left;
+  margin-bottom: 40px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.skillList li > h3{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.progressBar{
+  height: 5px;
+  position: relative;
+}
+.progressBar:after{
+  content: "";
+  background-color: #e8676b;
+  opacity: 0.2;
+  border-radius: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  right: 0;
+  display: block;
+}
+.progressBar > .progress{
+  height: 100%;
+  background-color: #e8676b;
+  border-radius: 5px;
+  width: 70%;
 }
