@@ -291,3 +291,51 @@ section h2{
   border-radius: 5px;
   width: 70%;
 }
+.portfolio{
+  text-align: center;
+}
+.portfolio nav{
+  text-align: center;
+  display: inline-block;
+}
+.portfolio nav > ol{
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+.portfolio li{
+  float: left;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.portfolio li:last-child{
+  margin-right: 0;
+}
+.portfolio .bar{
+  height: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
+}
+.portfolio .bar-inner{
+  background-color: #e8676b;
+  width: 50px;
+  border-radius: 5px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+}
+.portfolio .bar.bar-1 > .bar-inner{
+  width: 32px;
+  left: 0;
+}
+.portfolio .bar.bar-2 > .bar-inner{
+  width: 32px;
+  left: 72px;
+}
+.portfolio .bar.bar-3 > .bar-inner{
+  width: 92px;
+  left: 142px;
+}
